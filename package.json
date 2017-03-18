@@ -1,0 +1,28 @@
+{
+  "name": "grunt-unused",
+  "description": "Grunt plugin that searches a list of files for unused variables.",
+  "version": "0.1",
+  "author": {
+    "name": "Gustav Idström",
+    "email": "gustav.idstrom@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gustavidstrom/grunt-unused.git"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "search",
+    "unused"
+  ]
+}
