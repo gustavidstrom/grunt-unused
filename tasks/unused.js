@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 		var searchStrings = [];
 	    var cleanSearchStrings = [];
 		if (options.findParamsIn) {
-			grunt.log.writeln("Searching through file for search params");
+			grunt.log.writeln("Searching through " + options.findParamsIn + " for search params");
 
 			var sbfSrc = grunt.file.read(options.findParamsIn);
 			var sbfLines = sbfSrc.split("\n");
