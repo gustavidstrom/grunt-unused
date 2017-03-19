@@ -12,15 +12,19 @@ grunt.loadNpmTasks('grunt-unused');
 
 ### Usage examples
 
-unused: {
-    default: {
-        files: {
-            src: ['app/**/*.html']
-        },
-        options: {
-            findParamsIn: ['translations.js'],
-            regex: /[a-z]*=/g,
-            omitInResults: '='
+```js
+grunt.initConfig({
+    unused: {
+        translations: {
+            files: {
+                src: ['app/**/*.html', 'app/**/*.js']
+            },
+            options: {
+                findParamsIn: ['translations.js'],
+                regex: /[a-z]*=/g,
+                omitInResults: '='
+            }
         }
     }
-}
+});
+```
